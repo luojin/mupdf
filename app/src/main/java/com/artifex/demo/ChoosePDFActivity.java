@@ -21,8 +21,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
 
-import com.artifex.mupdfdemo.ChoosePDFItem;
-import com.artifex.mupdfdemo.R;
+import com.artifex.mupdf.ChoosePDFItem;
+import com.artifex.mupdf.R;
 
 enum Purpose {
 	PickPDF,
