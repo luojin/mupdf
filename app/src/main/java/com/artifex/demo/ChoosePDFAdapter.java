@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.artifex.mupdf.ChoosePDFItem;
+import com.artifex.mupdfdemo.ChoosePDFItem;
 import com.artifex.mupdfdemo.R;
 
 public class ChoosePDFAdapter extends BaseAdapter {

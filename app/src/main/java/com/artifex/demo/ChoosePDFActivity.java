@@ -21,7 +21,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
 
-import com.artifex.mupdfdemo.ChoosePDFAdapter;
 import com.artifex.mupdfdemo.ChoosePDFItem;
 import com.artifex.mupdfdemo.R;
 
