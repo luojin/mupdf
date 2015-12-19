@@ -170,8 +170,6 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
         System.out.println("Trying to open byte buffer");
         try {
             core = new MuPDFCore(this, buffer, magic);
-            // New file: drop the old outline data
-            OutlineActivityData.set(null);
         } catch (Exception e) {
             System.out.println(e);
             return null;
@@ -188,8 +186,6 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
         System.out.println("Trying to open " + path);
         try {
             core = new MuPDFCore(this, path);
-            // New file: drop the old outline data
-            OutlineActivityData.set(null);
         } catch (Exception e) {
             System.out.println(e);
             return null;
