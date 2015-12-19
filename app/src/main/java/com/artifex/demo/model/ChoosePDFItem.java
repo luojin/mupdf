@@ -1,4 +1,4 @@
-package com.artifex.mupdf;
+package com.artifex.demo.model;
 
 public class ChoosePDFItem {
 	public static enum Type {

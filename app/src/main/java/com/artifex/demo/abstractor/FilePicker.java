@@ -1,4 +1,4 @@
-package com.artifex.mupdf;
+package com.artifex.demo.abstractor;
 
 import android.net.Uri;
 
@@ -9,11 +9,11 @@ public abstract class FilePicker {
 
 	private final FilePickerSupport support;
 
-	FilePicker(FilePickerSupport _support) {
+	public FilePicker(FilePickerSupport _support) {
 		support = _support;
 	}
 
-	void pick() {
+	public void pick() {
 		support.performPickFor(this);
 	}
 

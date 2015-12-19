@@ -2,6 +2,7 @@ package com.artifex.mupdf;
 
 import java.util.ArrayList;
 
+import com.artifex.demo.abstractor.FilePicker;
 import com.artifex.mupdf.MuPDFCore.Cookie;
 
 import android.annotation.TargetApi;

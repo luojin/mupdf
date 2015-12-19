@@ -17,9 +17,9 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 
-import com.artifex.mupdf.FilePicker;
+import com.artifex.demo.abstractor.FilePicker;
+import com.artifex.demo.adapter.MuPDFPageAdapter;
 import com.artifex.mupdf.MuPDFCore;
-import com.artifex.mupdf.MuPDFPageAdapter;
 import com.artifex.mupdf.MuPDFReaderView;
 import com.artifex.mupdf.MuPDFView;
 import com.artifex.mupdf.R;

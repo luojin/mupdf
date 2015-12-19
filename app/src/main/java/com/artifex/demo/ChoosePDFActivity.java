@@ -21,13 +21,10 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
 
-import com.artifex.mupdf.ChoosePDFItem;
+import com.artifex.demo.adapter.ChoosePDFAdapter;
+import com.artifex.demo.enumerate.Purpose;
+import com.artifex.demo.model.ChoosePDFItem;
 import com.artifex.mupdf.R;
-
-enum Purpose {
-	PickPDF,
-	PickKeyFile
-}
 
 public class ChoosePDFActivity extends ListActivity {
 	static public final String PICK_KEY_FILE = "com.artifex.mupdfdemo.PICK_KEY_FILE";
@@ -39,7 +36,7 @@ public class ChoosePDFActivity extends ListActivity {
 	private Handler	     mHandler;
 	private Runnable     mUpdateFiles;
 	private ChoosePDFAdapter adapter;
-	private Purpose      mPurpose;
+	private Purpose mPurpose;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

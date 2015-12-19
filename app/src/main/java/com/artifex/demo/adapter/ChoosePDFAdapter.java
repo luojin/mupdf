@@ -1,4 +1,4 @@
-package com.artifex.demo;
+package com.artifex.demo.adapter;
 
 import java.util.LinkedList;
 
@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.artifex.mupdf.ChoosePDFItem;
+import com.artifex.demo.model.ChoosePDFItem;
 import com.artifex.mupdf.R;
 
 public class ChoosePDFAdapter extends BaseAdapter {
