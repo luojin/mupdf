@@ -16,7 +16,6 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
-
 import com.artifex.demo.abstractor.FilePicker;
 import com.artifex.demo.adapter.MuPDFPageAdapter;
 import com.artifex.mupdf.MuPDFCore;
@@ -28,9 +27,7 @@ import com.artifex.mupdf.SearchTaskResult;
 
 import java.io.InputStream;
 
-
-
-/**
+/*
  * Created by chunk on 2015/12/19.
  */
 public class PDFActivity extends Activity implements FilePicker.FilePickerSupport {
@@ -57,6 +54,11 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        initPDFCore(savedInstanceState);
+        createUI(savedInstanceState);
+    }
+
+    private void initPDFCore(Bundle savedInstanceState){
         if (core == null) {
             core = (MuPDFCore)getLastNonConfigurationInstance();
 
@@ -64,6 +66,7 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
                 mFileName = savedInstanceState.getString("FileName");
             }
         }
+
         if (core == null) {
             Intent intent = getIntent();
             byte buffer[] = null;
@@ -109,6 +112,7 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
                             reason = e2.toString();
                         }
                     }
+
                     if (reason != null) {
                         buffer = null;
                         Resources res = getResources();
@@ -127,6 +131,7 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
                     }
                 }
 
+                //pdf core open buffer or open file
                 if (buffer != null) {
                     core = openBuffer(buffer, intent.getType());
                 } else {
@@ -163,16 +168,14 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
                     });
             alert.setOnCancelListener(
                     new DialogInterface.OnCancelListener() {
-                            @Override
-                            public void onCancel(DialogInterface dialog) {
-                                finish();
-                            }
-            });
+                        @Override
+                        public void onCancel(DialogInterface dialog) {
+                            finish();
+                        }
+                    });
             alert.show();
             return;
         }
-
-        createUI(savedInstanceState);
     }
 
     private MuPDFCore openBuffer(byte buffer[], String magic) {
@@ -239,7 +242,7 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
             return;
 
         // Now create the UI.
-        // First create the document view
+        // create the document view
         mDocView = new MuPDFReaderView(this) {
             @Override
             protected void onMoveToChild(int i) {

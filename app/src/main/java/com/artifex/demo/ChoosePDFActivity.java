@@ -27,7 +27,7 @@ import com.artifex.demo.model.ChoosePDFItem;
 import com.artifex.mupdf.R;
 
 public class ChoosePDFActivity extends ListActivity {
-	static public final String PICK_KEY_FILE = "com.artifex.mupdfdemo.PICK_KEY_FILE";
+	static public final String PICK_KEY_FILE = "com.artifex.mupdf.PICK_KEY_FILE";
 	static private File  mDirectory;
 	static private Map<String, Integer> mPositions = new HashMap<String, Integer>();
 	private File         mParent;
