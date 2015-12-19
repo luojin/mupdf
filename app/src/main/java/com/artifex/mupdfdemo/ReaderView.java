@@ -1,12 +1,7 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
-
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -20,6 +15,8 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Scroller;
+
+import com.artifex.mupdfdemo.R;
 
 public class ReaderView
 		extends AdapterView<Adapter>

@@ -4,7 +4,7 @@
  * at http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.Collection;
 import java.util.Iterator;

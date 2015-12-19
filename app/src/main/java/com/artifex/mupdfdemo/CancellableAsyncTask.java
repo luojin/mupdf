@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;

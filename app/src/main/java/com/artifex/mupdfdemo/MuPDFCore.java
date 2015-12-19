@@ -1,8 +1,10 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
 import android.graphics.RectF;
+
+import com.artifex.mupdfdemo.R;
 
 import java.util.ArrayList;
 

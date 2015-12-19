@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 public class LinkInfoRemote extends LinkInfo {
 	final public String fileSpec;

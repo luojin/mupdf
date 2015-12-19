@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 // Version of MuPDFAlert without enums to simplify JNI
 public class MuPDFAlertInternal {

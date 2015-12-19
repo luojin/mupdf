@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;

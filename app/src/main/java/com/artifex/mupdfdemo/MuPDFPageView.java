@@ -1,8 +1,9 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.ArrayList;
 
-import com.artifex.mupdfdemo.MuPDFCore.Cookie;
+import com.artifex.mupdf.MuPDFCore.Cookie;
+import com.artifex.mupdfdemo.R;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;

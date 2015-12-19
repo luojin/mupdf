@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,6 +20,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+
+import com.artifex.mupdfdemo.R;
 
 // Make our ImageViews opaque to optimize redraw
 class OpaqueImageView extends ImageView {

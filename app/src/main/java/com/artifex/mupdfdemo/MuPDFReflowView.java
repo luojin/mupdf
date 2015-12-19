@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.mupdf;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -7,7 +7,6 @@ import android.graphics.RectF;
 import android.os.Handler;
 import android.util.Base64;
 import android.view.MotionEvent;
-import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
