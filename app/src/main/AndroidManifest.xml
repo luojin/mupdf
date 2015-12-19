@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="PDFActivity"
+            android:theme="@style/AppBaseTheme"
+            android:label="@string/app_name"/>
+        <activity
             android:name="MuPDFActivity"
             android:theme="@style/AppBaseTheme"
             android:label="@string/app_name">

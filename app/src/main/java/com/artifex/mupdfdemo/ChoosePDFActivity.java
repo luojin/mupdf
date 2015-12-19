@@ -202,7 +202,7 @@ public class ChoosePDFActivity extends ListActivity {
 		position -= mDirs.length;
 
 		Uri uri = Uri.parse(mFiles[position].getAbsolutePath());
-		Intent intent = new Intent(this,MuPDFActivity.class);
+		Intent intent = new Intent(this,PDFActivity.class);
 		intent.setAction(Intent.ACTION_VIEW);
 		intent.setData(uri);
 		switch (mPurpose) {

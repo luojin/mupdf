@@ -60,6 +60,7 @@ public class MuPDFActivity extends Activity implements FilePicker.FilePickerSupp
 	private MuPDFCore    core;
 	private String       mFileName;
 	private MuPDFReaderView mDocView;
+
 	private View         mButtonsView;
 	private boolean      mButtonsVisible;
 	private EditText     mPasswordView;
