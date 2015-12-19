@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.demo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,6 +17,15 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 
+import com.artifex.mupdfdemo.FilePicker;
+import com.artifex.mupdfdemo.MuPDFCore;
+import com.artifex.mupdfdemo.MuPDFPageAdapter;
+import com.artifex.mupdfdemo.MuPDFReaderView;
+import com.artifex.mupdfdemo.MuPDFView;
+import com.artifex.mupdfdemo.R;
+import com.artifex.mupdfdemo.ReaderView;
+import com.artifex.mupdfdemo.SearchTaskResult;
+
 import java.io.InputStream;
 
 
@@ -24,9 +33,9 @@ import java.io.InputStream;
 /**
  * Created by chunk on 2015/12/19.
  */
-public class PDFActivity extends Activity implements FilePicker.FilePickerSupport{
+public class PDFActivity extends Activity implements FilePicker.FilePickerSupport {
 
-    private MuPDFCore    core;
+    private MuPDFCore core;
     private String       mFileName;
     private FilePicker mFilePicker;
 
@@ -327,7 +336,7 @@ public class PDFActivity extends Activity implements FilePicker.FilePickerSuppor
     {
         if (mDocView != null) {
             mDocView.applyToChildren(new ReaderView.ViewMapper() {
-                void applyToView(View view) {
+                 public void applyToView(View view) {
                     ((MuPDFView)view).releaseBitmaps();
                 }
             });

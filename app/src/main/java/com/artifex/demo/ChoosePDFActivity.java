@@ -1,4 +1,4 @@
-package com.artifex.mupdfdemo;
+package com.artifex.demo;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -20,6 +20,10 @@ import android.os.FileObserver;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
+
+import com.artifex.mupdfdemo.ChoosePDFAdapter;
+import com.artifex.mupdfdemo.ChoosePDFItem;
+import com.artifex.mupdfdemo.R;
 
 enum Purpose {
 	PickPDF,

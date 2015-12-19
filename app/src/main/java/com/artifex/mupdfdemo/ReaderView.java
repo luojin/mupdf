@@ -66,8 +66,8 @@ public class ReaderView
 	private float		  mLastScaleFocusX;
 	private float		  mLastScaleFocusY;
 
-	static abstract class ViewMapper {
-		abstract void applyToView(View view);
+	public static abstract class ViewMapper {
+		public abstract void applyToView(View view);
 	}
 
 	public ReaderView(Context context) {
@@ -521,7 +521,7 @@ public class ReaderView
 		if (mReflow) {
 			applyToChildren(new ViewMapper() {
 				@Override
-				void applyToView(View view) {
+				public void applyToView(View view) {
 					onScaleChild(view, mScale);
 				}
 			});

@@ -163,9 +163,10 @@ public class MuPDFPageView extends PageView implements MuPDFView {
 			public void onClick(DialogInterface dialog, int which) {
 				FilePicker picker = new FilePicker(mFilePickerSupport) {
 					@Override
-					void onPick(Uri uri) {
+					public void onPick(Uri uri) {
 						signWithKeyFile(uri);
 					}
+
 				};
 
 				picker.pick();

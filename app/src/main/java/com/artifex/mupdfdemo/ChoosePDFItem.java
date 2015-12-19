@@ -1,7 +1,7 @@
 package com.artifex.mupdfdemo;
 
 public class ChoosePDFItem {
-	enum Type {
+	public static enum Type {
 		PARENT, DIR, DOC
 	}
 
