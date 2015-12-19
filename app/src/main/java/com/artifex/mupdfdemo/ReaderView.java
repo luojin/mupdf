@@ -584,19 +584,7 @@ public class ReaderView
 			//  so let's display an alert.
 			//  TODO: a better message, in resources.
 
-			if (!memAlert) {
-				memAlert = true;
-				AlertDialog alertDialog = MuPDFActivity.getAlertBuilder().create();
-				alertDialog.setMessage("Out of memory during layout");
-				alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-					new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int which) {
-							dialog.dismiss();
-							memAlert = false;
-						}
-					});
-				alertDialog.show();
-			}
+
 		}
 	}
 
